@@ -32,7 +32,7 @@ from progressbar import ProgressBar, Fraction
 from unidecode import unidecode
 from subprocess import call
 
-VERBOSE = False
+VERBOSE = True
 STATE_START, STATE_TEXT, STATE_WORDS, STATE_TREE, STATE_DEPENDENCY, STATE_COREFERENCE = 0, 1, 2, 3, 4, 5
 WORD_PATTERN = re.compile('\[([^\]]+)\]')
 CR_PATTERN = re.compile(r"\((\d*),(\d)*,\[(\d*),(\d*)\]\) -> \((\d*),(\d)*,\[(\d*),(\d*)\]\), that is: \"(.*)\" -> \"(.*)\"")

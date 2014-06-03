@@ -3,7 +3,6 @@ import json
 import jsonrpclib
 from pprint import pprint
 
-
 class StanfordNLP:
     def __init__(self, port_number=8080):
         self.server = jsonrpclib.Server("http://localhost:%d" % port_number)
